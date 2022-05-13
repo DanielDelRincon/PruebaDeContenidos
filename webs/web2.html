@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/css_menu.css">
+        <link rel="stylesheet" href="../css/css_web2.css">
+        <script src="../Js/validar.js"></script>
+        <title>Formulario</title>
+    </head>
+    <body>
+            <header>
+                <div class="nosotros">
+                    <img src="../fotos/plugins-formulario-de-contacto-wordpress-1280x720.jpg" alt="lafoto">
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="../index.html">Indice</a></li>
+                        <li><a  href="./web1.html">Tabla</a></li>
+                        <li><a id="rojo" href="#">Formulario</a></li>
+                        <li><a href="./web3.html">Información</a></li>
+                    </ul>
+                </nav>
+            </header>
+        <div class="contenedor">
+            <h1>Formulario</h1>
+            <form action="mailto:descalona1490@gmail.com" method="post" enctype="multipart/form-data" name="form1" autocomplete="off" >
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <div class="separador">
+                        <label for="nombre">Nombre:
+                            <sup>*</sup>
+                        </label>
+                        <input type="text" id="nombre" name="nombre" placeholder="inserte su nombre" maxlength="35" minlength="2" size="25" required autofocus title="Tiene que insertar un nombre entre 2 y 35 caracteres" class="deEntrada" pattern="[a-zA-Z áéíóúÁÉÍÓÚñÑ]{2,35}" tabindex="1"/>
+                        <span>Su Nombre</span>
+                    </div>
+                    <div class="separador">
+                        <label for="apellido1">Apellido 1:
+                            <sup>*</sup>
+                        </label>
+                        <input type="text" id="apellido1" name="apellido1" placeholder="Inserte su primer apellido" maxlength="25" minlength="2" size="25" required title="Tiene que insertar un apellido entre 2 y 35 caracteres" class="deEntrada" pattern="[a-zA-Z áéíóúÁÉÍÓÚñÑ]{2,35}" tabindex="2"/>
+                        <span>Su Primer Apellido</span>
+                    </div>
+                    <div class="separador">
+                        <label for="apellido2">Apellido 2:<sup>*</sup>
+                        </label>
+                        <input type="text" id="apellido2" name="apellido2" placeholder="Inserte sus apellido2" maxlength="25" minlength="2" size="25" required title="Tiene que insertar un apellido entre 2 y 35 caracteres" class="deEntrada" pattern="[a-zA-Z áéíóúÁÉÍÓÚñÑ]{2,35}" tabindex="2"/>
+                        <span>Su Segundo Apellido</span>
+                    </div>
+                    <div class="separador">
+                        <label for="edad">Edad:</label>
+                        <input type="range" id="edad" name="edad" max="100" min="0" value="50" title="Tiene que insertar una edad entre 0 y 100 años" class="deEntrada"/>
+                        <span id="verEdad">
+                            
+                        </span>
+                    </div>
+                    <div class="separador">
+                        <label>Seleccione el producto a reparar/consultar<sup>*</sup>
+                        </label>
+                        <select id="estudios" name="estudios">
+                            <option value="defecto">Valor por defecto</option>
+                            <option value="Ps4">Ps4</option>
+                            <option value="XOne">Xbox One</option>
+                            <option value="NS">Nintendo Switch</option>
+                            <option value="Hablar">Contacta con nosotros</option>
+                        </select>
+                    </div>
+                    <div class="separador">
+                        <label>Seleccione un archivo
+                        </label>
+                        <input type="file" >
+                    </div>
+                    <div class="separador">
+                        <label for="correo_e">Correo Electronico:<sup>*</sup>
+                        </label>
+                        <input type="text" id="correo_e" name="correo_e" placeholder="Inserte su correo electronico" maxlength="50" size="25" required title="Tiene que insertar un correo electronico maximo de 50 caracteres" class="deEntrada" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+                        <span>Inserte su correo electronico</span>
+                    </div>
+                    <div class="separador">
+                        <label for="comentario">Mensaje</label>
+                        <textarea class="deEntrada" rows="12" cols="50" placeholder="Inserte su mensaje...." maxlength="500" id="comentario" name="comentario">Hola</textarea>
+                        <div id="insertados"></div>
+                    </div>
+                    <div class="botones">
+                        <input type="submit" value="Enviar" name="submit" class="bot" />
+                        <input type="reset" value="Borrar Formulario" class="bot">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

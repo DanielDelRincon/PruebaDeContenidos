@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(112, 109, 109);
+}
+
+.contenedor{
+    width: 65%;
+    margin: auto;
+}
+header{
+    padding-bottom: 0;
+}
+
+header .nosotros img{
+    height: 270px;
+    width: 50%;
+    margin-left: 200px;
+}
+
+header .menu{
+        list-style: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+}
+h2{
+    text-align: center;
+}
+#Tabla table {
+    width: 90%;
+    min-height: 90%;
+    border-collapse: collapse;
+    display: block;
+    margin-left: 5%;
+    display: flex;
+    height: 400px;
+    align-items: center;
+}
+th,
+td {
+    border: 2px solid rgb(241, 199, 199);
+    width: 200px;
+    text-align: center;
+}
+
+#Tabla table tr th img{
+    width: 60%;
+}

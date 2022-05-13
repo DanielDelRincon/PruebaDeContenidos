@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(112, 109, 109);
+}
+
+.contenedor{
+    width: 65%;
+    margin: auto;
+}
+header{
+    padding-bottom: 0;
+}
+
+header .nosotros img{
+    height: 270px;
+    width: 50%;
+    margin-left: 200px;
+}
+
+header .menu{
+        list-style: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+}
+
+h1{
+    text-align: center;
+}
+
+.articulos{
+	width: 50%;
+	height: auto;
+	float:left;
+	padding-left:5px;
+	padding-right:5px;
+
+}
+.articulos h2{
+	margin-top:5px;
+	background-color:burlywood;
+	background-color:burlywood;
+	text-align:center;
+}
+#art3{
+    margin-left: 50%;
+    margin-top: 10px;
+    transform: translate(-50%);
+}
+img {
+	width:40%;
+	height:auto;
+	float:left;
+	display:block;
+}
+.limpiar{
+	clear:both;
+}

@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(112, 109, 109);
+}
+
+.contenedor{
+    width: 66%;
+    margin: auto;
+}
+header{
+    padding-bottom: 0;
+}
+
+header .nosotros img{
+    height: 270px;
+    width: 70%;
+    margin-left: 200px;
+}
+
+header .menu{
+        list-style: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+}
+
+h2{
+    text-align: center;
+    padding-top: 10%;
+}
+
+h3{
+    text-align: center;
+    padding-top: 10%;
+}

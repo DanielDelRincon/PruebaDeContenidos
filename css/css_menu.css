@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: blanchedalmond;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top;
+    margin: 0% 5%;
+}
+.contenedor{
+    width: 100%;
+    color: white;
+
+}
+
+header{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto .125em;
+    padding-bottom:7% ;
+    padding-bottom: 0;
+}
+header .nosotros{
+    display: flex;
+}
+header .nosotros img{
+    height: 100%;
+    width: 70%;
+}
+
+
+/*Menu*/
+header .menu{
+    align-self: center;
+    height: 100%;
+    position: relative;
+}
+header .menu ul{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+header .menu ul li{
+    display: inline-block;
+    margin: 1%;
+
+}
+ul li #rojo{
+    color: red;
+    background-color: bisque;
+}
+ul li:hover{
+    transform: scale(1.2);
+    border-radius: 20px;
+    background-color: aqua;
+    color: black;
+}
+header .menu ul li a{
+    display:block;
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgb(151, 233, 205);
+    width: 9em;
+    text-align: center;
+    border-radius: 20px;
+    
+}
